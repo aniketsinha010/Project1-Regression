@@ -18,6 +18,9 @@ standard_scaler = pickle.load(open('models/scaler.pkl','rb'))
 def index():
     return render_template('index.html')
 
+## designing the html pages from chatgpt, original ones are kept in original-html,see them during revision...
+## dont read from current templates folder during revision...
+
 
 @app.route('/predictdata',methods=['GET','POST'])
 def predict_datapoint():
